@@ -8,7 +8,7 @@ export class Categoria extends Entity {
     precision: 10,
     scale: 0,
     id: 1,
-    mssql: {columnName: 'id', dataType: 'int', dataLength: null, dataPrecision: 10, dataScale: 0, nullable: 'YES'},
+    mssql: {columnName: 'id', dataType: 'int', dataLength: null, dataPrecision: 10, dataScale: 0, nullable: 'NO'},
   })
   id?: number;
 
@@ -16,9 +16,17 @@ export class Categoria extends Entity {
     type: 'string',
     required: true,
     length: 50,
-    mssql: {columnName: 'nombre', dataType: 'varchar', dataLength: 50, dataPrecision: null, dataScale: null, nullable: 'NO'},
+    mssql: {columnName: 'Nombre', dataType: 'nvarchar', dataLength: 50, dataPrecision: null, dataScale: null, nullable: 'NO'},
   })
   nombre: string;
+
+  @property({
+    type: 'string',
+    required: true,
+    length: 50,
+    mssql: {columnName: 'Descripciom', dataType: 'nvarchar', dataLength: 50, dataPrecision: null, dataScale: null, nullable: 'NO'},
+  })
+  descripciom: string;
 
   // Define well-known properties here
 
