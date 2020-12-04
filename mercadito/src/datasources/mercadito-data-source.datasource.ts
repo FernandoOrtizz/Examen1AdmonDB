@@ -4,11 +4,11 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'mercaditoDataSource',
   connector: 'mssql',
-  url: 'mssql://Fernando:123456@DESKTOP-F1Q5C8L/MercaditoDB',
-  host: 'DESKTOP-F1Q5C8L',
+  url: 'mssql://FernandoOrtiz_SQLLogin_1:dmwwb97sr2@MercaditoDB.mssql.somee.com/MercaditoDB',
+  host: 'MercaditoDB.mssql.somee.com',
   port: 1433,
-  user: 'Fernando',
-  password: '123456',
+  user: 'FernandoOrtiz_SQLLogin_1',
+  password: 'dmwwb97sr2',
   database: 'MercaditoDB'
 };
 
